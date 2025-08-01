@@ -1,0 +1,379 @@
+.homepage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #111111 25%, #1a1a1a 50%, #222222 75%, #2a2a2a 100%);
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Minimalist decorative elements */
+.papel-picado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.papel-strip {
+  width: 40px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  animation: subtleSwing 4s ease-in-out infinite;
+}
+
+.papel-strip:nth-child(1) { animation-delay: 0s; }
+.papel-strip:nth-child(2) { animation-delay: 0.8s; }
+.papel-strip:nth-child(3) { animation-delay: 1.6s; }
+.papel-strip:nth-child(4) { animation-delay: 2.4s; }
+.papel-strip:nth-child(5) { animation-delay: 3.2s; }
+
+@keyframes subtleSwing {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 120px 20px 60px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Minimalist Cat Logo */
+.cat-logo {
+  margin-bottom: 40px;
+}
+
+.cat-face {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  animation: subtleBounce 3s ease-in-out infinite;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.cat-ears {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.ear {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 25px solid #ffffff;
+}
+
+.cat-eyes {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+}
+
+.eye {
+  width: 15px;
+  height: 15px;
+  background: #000000;
+  border-radius: 50%;
+  animation: subtleBlink 4s infinite;
+}
+
+.cat-nose {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: #666666;
+  border-radius: 50%;
+}
+
+.cat-mouth {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 8px;
+  border: 1px solid #666666;
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+}
+
+.sombrero {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.8;
+}
+
+.hat-base {
+  width: 60px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 30px 30px 0 0;
+}
+
+.hat-brim {
+  width: 75px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 37px;
+  margin-top: -3px;
+}
+
+@keyframes subtleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes subtleBlink {
+  0%, 90%, 100% { opacity: 1; }
+  95% { opacity: 0.3; }
+}
+
+.title {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  animation: fadeIn 1s ease-out;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 40px;
+  font-weight: 400;
+  animation: fadeIn 1s ease-out 0.2s both;
+}
+
+/* Minimalist Cactus Decoration */
+.cactus-decoration {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.3;
+}
+
+.cactus {
+  position: relative;
+}
+
+.cactus-body {
+  width: 30px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 15px;
+  position: relative;
+}
+
+.cactus-arm {
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 7px;
+}
+
+.cactus-arm.left {
+  left: -10px;
+  top: 15px;
+  transform: rotate(-20deg);
+}
+
+.cactus-arm.right {
+  right: -10px;
+  top: 30px;
+  transform: rotate(20deg);
+}
+
+/* Conversion Categories */
+.conversion-categories {
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  margin: 0 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1s ease-out 0.4s both;
+}
+
+.conversion-categories h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.category-card:hover::before {
+  left: 100%;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.category-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  animation: subtlePulse 3s ease-in-out infinite;
+}
+
+.category-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.category-card p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Category-specific subtle colors */
+.category-card.length {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.category-card.weight {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.category-card.time {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.category-card.volume {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.category-card.random {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Minimalist Confetti */
+.confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  animation: subtleFall 4s linear infinite;
+}
+
+@keyframes subtleFall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .papel-picado {
+    height: 40px;
+  }
+  
+  .papel-strip {
+    width: 30px;
+    height: 35px;
+  }
+  
+  .cat-face {
+    width: 80px;
+    height: 80px;
+  }
+} 

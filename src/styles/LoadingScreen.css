@@ -1,0 +1,316 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #000000 0%, #111111 25%, #1a1a1a 50%, #222222 75%, #2a2a2a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow: hidden;
+}
+
+.loading-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.floating-cats {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.floating-cat {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: subtleFloat 5s ease-in-out infinite;
+  opacity: 0.3;
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+    opacity: 0.6;
+  }
+}
+
+.loading-content {
+  text-align: center;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Minimalist Large Cat Logo */
+.cat-logo-large {
+  margin-bottom: 30px;
+}
+
+.cat-face-large {
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  animation: subtleBounceLarge 3s ease-in-out infinite;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+.cat-ears-large {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.ear-large {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #ffffff;
+}
+
+.cat-eyes-large {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+}
+
+.eye-large {
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  border-radius: 50%;
+  animation: subtleBlinkLarge 4s infinite;
+}
+
+.cat-nose-large {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #666666;
+  border-radius: 50%;
+}
+
+.cat-mouth-large {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 12px;
+  border: 1px solid #666666;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+}
+
+.sombrero-large {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.8;
+}
+
+.hat-base-large {
+  width: 80px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 40px 40px 0 0;
+}
+
+.hat-brim-large {
+  width: 100px;
+  height: 8px;
+  background: #ffffff;
+  border-radius: 50px;
+  margin-top: -4px;
+}
+
+@keyframes subtleBounceLarge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes subtleBlinkLarge {
+  0%, 90%, 100% { opacity: 1; }
+  95% { opacity: 0.3; }
+}
+
+.loading-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  animation: fadeIn 1s ease-out;
+}
+
+.loading-message {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 30px;
+  min-height: 2rem;
+  animation: pulse 2s ease-in-out infinite;
+  font-weight: 400;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.progress-container {
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-fill {
+  height: 100%;
+  background: #ffffff;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+  animation: subtleGlow 2s ease-in-out infinite;
+}
+
+@keyframes subtleGlow {
+  0%, 100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+  50% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); }
+}
+
+.progress-text {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.loading-tips {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.loading-tips p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Minimalist Confetti */
+.confetti-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.confetti-piece-loading {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  animation: subtleFallLoading 5s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes subtleFallLoading {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loading-content {
+    padding: 40px 20px;
+    margin: 20px;
+  }
+  
+  .cat-face-large {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .loading-title {
+    font-size: 2rem;
+  }
+  
+  .loading-message {
+    font-size: 1rem;
+  }
+  
+  .cat-ears-large {
+    gap: 15px;
+  }
+  
+  .ear-large {
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #ffffff;
+  }
+  
+  .cat-eyes-large {
+    gap: 25px;
+  }
+  
+  .eye-large {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .hat-base-large {
+    width: 70px;
+    height: 18px;
+  }
+  
+  .hat-brim-large {
+    width: 85px;
+    height: 6px;
+  }
+} 
