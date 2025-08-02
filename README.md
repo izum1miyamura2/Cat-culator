@@ -10,9 +10,8 @@ _Converting the world into cat units since forever!_
 ### Team Name: Purr-fect Coders
 
 ### Team Members
-- **Team Lead:** Izumi Miyamura – [Your College Name]
-- **Member 2:** [Add Name] – [College]
-- **Member 3:** [Add Name] – [College]
+- **Team Lead:** Izumi Miyamura – [ASIET]
+- **Member 2:** [Sidharth MS] – [ASIET]
 
 ---
 
@@ -41,7 +40,7 @@ Cat-culator translates real-world values into feline-friendly units. From measur
 
 **For Software:**
 - **Languages:** HTML, CSS, JavaScript  
-- **Frameworks:** None — pure vibes and vanilla JS  
+- **Frameworks:** react, vite
 - **Libraries:** Emojis 😺  
 - **Tools:** VSCode, GitHub, Feline-based imagination
 
@@ -96,19 +95,10 @@ _None. It’s all instinct, chaos, and cats._
 
 ---
 
-## Project Demo
-
-### 🎥 Video
-[Add your demo video link here]  
-*A thrilling journey through converting stuff to cats.*
-
----
-
 ## Team Contributions
 
 - **Izumi Miyamura** – UI/UX, logic, core idea behind Cat-culator  
-- **Member 2** – [Fill in]  
-- **Member 3** – [Fill in]
+- **Sidharth MS** – [rest]  
 
 ---
 
