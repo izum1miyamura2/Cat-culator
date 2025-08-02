@@ -76,16 +76,17 @@ Let the Cat-culator do its meow-gic.
 ### Screenshots
 
 #### 🏠 Home Page
-![Screenshot1](https://github.com/izum1miyamura2/Cat-culator/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7/frame%20(3).png)
+(Refer drive)
 *The whimsical landing page where your cat-venture begins.*
 
 #### 📏 Length Conversion
-![Screenshot2](./mnt/data/Screenshot%202025-08-02%20054657.png)
+(Refer drive)
 *Convert boring meters to the number of cats lying head to tail.*
 
 #### 🎉 Result Display
-![Screenshot3](./mnt/data/Screenshot%202025-08-02%20054746.png)
+(Refer drive)
 *“2 meters = 10 cats.” Science.*
+https://drive.google.com/drive/folders/1ni2SNHJCrAHxq3Lw23OubrvrmaQpPGJj?usp=drive_link
 
 ---
 
